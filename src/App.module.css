@@ -1,0 +1,57 @@
+.App, .main{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main{
+  flex-direction: column;
+  background-image: url("../public/wallpaper.jpg");
+  background-size: cover;
+}
+
+.main h1{
+  color: #ffe27e;
+}
+
+.main h1 span{
+  color:#1b1b24;
+  border-bottom: solid 4px #1b1b24;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  width: 20vw;
+  height: 70vh;
+  overflow: auto;
+  text-align: center;
+}
+
+form h1{
+  display: flex;
+  color: #000000;
+}
+
+.boxes{
+  display: flex;
+  justify-content: center;
+  height: 40%;
+  flex-wrap: wrap;
+}
+
+.boxes p{
+  color: #000000;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  width: 100%;
+}
