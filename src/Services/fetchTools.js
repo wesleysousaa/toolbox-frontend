@@ -1,8 +1,8 @@
-import {options} from './headerOptions';
+import {optionsWithToken} from './headerOptions';
 const fetchTools = async () => {
   const response = await fetch("http://localhost:8080/api/ferramenta", {
     method: "GET",
-    headers: options
+    headers: optionsWithToken
   });
   
   return await response.json();

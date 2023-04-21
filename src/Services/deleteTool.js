@@ -1,8 +1,8 @@
-import {options} from './headerOptions';
+import {optionsWithToken} from './headerOptions';
 const deleteTool = async (id) => {
   const response = await fetch(`http://localhost:8080/api/ferramenta/${id}`, {
     method: "DELETE",
-    headers: options
+    headers: optionsWithToken
   });
   return response;
 };

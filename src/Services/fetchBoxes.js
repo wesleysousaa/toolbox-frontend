@@ -1,9 +1,9 @@
-import {options} from './headerOptions';
+import {optionsWithToken} from './headerOptions';
 
 const fetchBoxes = async () => {
   const response = await fetch("http://localhost:8080/api/caixa", {
     method: "GET",
-    headers: options
+    headers: optionsWithToken
   });
 
   return await response.json();
